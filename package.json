@@ -1,0 +1,36 @@
+{
+  "name": "ecommerce-node-mongodb-server",
+  "version": "1.0.0",
+  "description": "```sh docker exec -it node-au_db_1 mongo  -u admin -p secret auth",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r esm -r dotenv/config src",
+    "up": "mkdir -p data && docker-compose up -d"
+  },
+  "directories": {
+    "src": "src"
+  },
+  "engines": {
+    "node": ">=12.18.4"
+  },
+  "esm": {
+    "mode": "auto"
+  },
+  "keywords": [],
+  "author": "Sandy Zhang",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "boom": "^7.3.0",
+    "connect-redis": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "ioredis": "^4.17.3",
+    "mongoose": "^5.10.7",
+    "nodemon": "^2.0.4"
+  }
+}
